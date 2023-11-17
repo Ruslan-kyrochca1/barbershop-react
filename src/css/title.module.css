@@ -1,0 +1,28 @@
+.title{
+    margin-top: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+        width: 400px;
+        height: 0.5em;
+        border-bottom: 3px solid #54371A;
+    }
+}
+
+@media (max-width: 480px){
+    .title{
+        &::after{
+            content:"";
+            width: 200px;
+        }
+    }
+}
